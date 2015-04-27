@@ -1,0 +1,9 @@
+
+<div class="new-msg-form">
+  {{input type="text" placeholder="Name" value=name class="name-input"}}<br>
+  {{input type="text" placeholder="Message" value=body class="msg-input"}}<br>
+  {{input type="text" placeholder="Doc" value=doc class="msg-input"}}<br>
+  {{input type="text" placeholder="Format" value=format class="msg-input"}}<br>
+
+    <button {{action 'addMessage'}} class="submit">Submit</button>
+</div>

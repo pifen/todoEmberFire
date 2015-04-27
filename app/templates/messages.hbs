@@ -1,0 +1,12 @@
+<div>2nd level resource template</div>
+<div class='new-msg-link'>
+{{#link-to 'messages.new'}} Add a new message{{/link-to}}
+</div>
+{{!-- nested template --}}
+{{outlet}}
+
+{{#each  message in model}}
+<div >{{message.name}} :{{message.message}}</div>
+
+{{/each}}
+
